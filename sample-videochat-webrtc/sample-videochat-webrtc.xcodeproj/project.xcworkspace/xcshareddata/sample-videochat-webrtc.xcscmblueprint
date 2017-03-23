@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "43E48969AB834C98133F4F66DEBB455ACE272805",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBA290F546661ADFAE46E04157EDCCD7D9E9E71D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "B415C5F5923FD1699E46B5668327F083B9C32C51" : 0,
-    "43E48969AB834C98133F4F66DEBB455ACE272805" : 0
+    "DBA290F546661ADFAE46E04157EDCCD7D9E9E71D" : 9223372036854775807,
+    "43E48969AB834C98133F4F66DEBB455ACE272805" : 0,
+    "B415C5F5923FD1699E46B5668327F083B9C32C51" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "95C928AC-2FEA-4BD0-AD72-E2C3D86E0F7D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "B415C5F5923FD1699E46B5668327F083B9C32C51" : "SDK-ios-WebRTC",
-    "43E48969AB834C98133F4F66DEBB455ACE272805" : "quickblox-ios-sdk"
+    "DBA290F546661ADFAE46E04157EDCCD7D9E9E71D" : "Quickblox_webrtc\/",
+    "43E48969AB834C98133F4F66DEBB455ACE272805" : "quickblox-ios-sdk",
+    "B415C5F5923FD1699E46B5668327F083B9C32C51" : "SDK-ios-WebRTC"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "sample-videochat-webrtc",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:QuickBlox\/SDK-ios-WebRTC.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B415C5F5923FD1699E46B5668327F083B9C32C51"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bianchenglongRC\/Quickblox_webrtc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBA290F546661ADFAE46E04157EDCCD7D9E9E71D"
     }
   ]
 }

@@ -253,6 +253,8 @@ static NSString * const kUnknownUserLabel = @"?";
             // put camera capture on pause
             [weakSelf.cameraCapture stopSession:nil];
             
+            weakSelf.cameraCapture = nil;
+            
             [weakSelf.navigationController pushViewController:sharingVC animated:YES];
         }];
     }

@@ -1,0 +1,6 @@
+framework module tuputechSDK {
+  umbrella header "tuputechSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -17,6 +17,7 @@
 #import "SVProgressHUD.h"
 #import "CallViewController.h"
 #import "IncomingCallViewController.h"
+#import "MyCallViewController.h"
 
 const NSUInteger kQBPageSize = 50;
 
@@ -215,7 +216,9 @@ const NSUInteger kQBPageSize = 50;
                 if (session) {
                     
                     self.session = session;
-                    CallViewController *callViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CallViewController"];
+//                    CallViewController *callViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CallViewController"];
+                    MyCallViewController *callViewController = [[MyCallViewController alloc] init];
+
                     callViewController.session = self.session;
                     callViewController.usersDatasource = self.dataSource;
                     
@@ -387,8 +390,9 @@ const NSUInteger kMaxUsersToCall = 5;
 
 - (void)incomingCallViewController:(IncomingCallViewController *)vc didAcceptSession:(QBRTCSession *)session {
     
-    CallViewController *callViewController =
-    [self.storyboard instantiateViewControllerWithIdentifier:@"CallViewController"];
+//    CallViewController *callViewController =
+//    [self.storyboard instantiateViewControllerWithIdentifier:@"CallViewController"];
+    MyCallViewController *callViewController = [[MyCallViewController alloc] init];
     
     callViewController.session = session;
     callViewController.usersDatasource = self.dataSource;

@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'sample-videochat-webrtc' do
+  pod 'TupuTech', '~> 1.1.2'
+end

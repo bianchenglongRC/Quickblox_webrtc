@@ -10,6 +10,11 @@
 #import "SVProgressHUD.h"
 #import "QBCore.h"
 #import "Settings.h"
+#import <tuputechSDK/TPTechSDK.h>
+
+
+#define TP_APP_KEY @"4362828a8e8d819a732a23f5c801c3a5"
+#define TP_APP_SECRET @"8a44549bc215edb57b4f508c38db5ab27e6b09ce"
 
 const CGFloat kQBRingThickness = 1.f;
 const NSTimeInterval kQBAnswerTimeInterval = 60.f;
@@ -20,6 +25,15 @@ const NSTimeInterval kQBDialingTimeInterval = 5.f;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    id<TPSDKAuthInterface> authService = [TPTechSDK createTPAuthService];
+    [authService autoInstallLicenseBySDKWithAppkey:TP_APP_KEY appSecret:TP_APP_SECRET serviceIDs:@[@(TPFaceCheckService)] complete:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Install tuputech liscense success!");
+        } else {
+            NSLog(@"Install tuputech liscense failed, err = [%@]", [error domain]);
+        }
+    }];
     
     [QBSettings setAccountKey:@"7yvNe17TnjNUqDoPwfqp"];
     [QBSettings setApplicationID:40718];

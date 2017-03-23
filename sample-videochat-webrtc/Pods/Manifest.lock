@@ -1,0 +1,15 @@
+PODS:
+  - GPUImage (0.1.7)
+  - TupuTech (1.1.2):
+    - GPUImage
+
+DEPENDENCIES:
+  - TupuTech (~> 1.1.2)
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  TupuTech: 86400e17be77b3571d664e3fc5ba4cf69b8240f5
+
+PODFILE CHECKSUM: 631fcd43461e67aa9df91ffaa3b77232a8cf9fa2
+
+COCOAPODS: 1.1.1
